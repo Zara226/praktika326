@@ -75,6 +75,7 @@ namespace SchoolLogo.Pages
                     int.Parse(TBTimeMinute.Text.ToString()),
                     0
                 )
+
             });
 
             App.db.SaveChanges();
