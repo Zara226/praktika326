@@ -1,0 +1,24 @@
+﻿<Window x:Class="SchoolLogo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SchoolLogo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="371*"/>
+            <RowDefinition Height="19*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="#FF04A0FF"></Rectangle>
+        <Image Source="/Resources/school_logo.png" HorizontalAlignment="Left"></Image>
+        <TextBlock x:Name="TitleTb" Text="SchoolLogo" HorizontalAlignment="Center" FontSize="22"></TextBlock>
+        <Button HorizontalAlignment="Right" Margin="65 0" x:Name="BackBtn" Click="BackBtn_Click">Назад</Button>
+        <Button HorizontalAlignment="Right" Margin="10 0" x:Name="ExitBtn" Click="ExitBtn_Click">Выход</Button>
+        <Frame Grid.Row="1" x:Name="MyFrame" NavigationUIVisibility="Hidden">
+        </Frame>
+        <Rectangle Grid.Row="2" Fill="#FF04A0FF"></Rectangle>
+    </Grid>
+</Window>
